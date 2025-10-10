@@ -1,7 +1,7 @@
 # Hospital Data Monitoring & Archival System
 
-## Project Overview
-This project is a Hospital Data Monitoring & Archival System that:
+## Project Overview:
+an automated log management System that:
 
 - Collects real-time patient health metrics (heart rate, temperature) and resource usage (water) using Python simulators.
 - Provides an interactive shell script to archive logs with timestamps.
