@@ -11,3 +11,8 @@ an automated log management System that:
 
 ## Directory Structure
 
+- Analysis Logs
+- Archival Logs
+- Heart Rate Monitor
+- Temperature Sensor
+- Water Meter
