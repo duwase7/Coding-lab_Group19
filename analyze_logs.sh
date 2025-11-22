@@ -13,12 +13,17 @@ echo "2) Temperature (temperature.log)"
 echo "3) Water Usage (water_usage.log)"
 read -p "Enter choice (1-3): " choice
 
+# Validate input
+if [[ ! "$choice" =~ ^[1-3]$ ]]; then
+    echo "Invalid choice. Exiting."
+    exit 1
+fi
+
 # Map choice to log file
 case $choice in
     1) LOG_FILE="heart_rate.log" ;;
     2) LOG_FILE="temperature.log" ;;
     3) LOG_FILE="water_usage.log" ;;
-    *) echo "Invalid choice. Exiting."; exit 1 ;;
 esac
 
 LOG_PATH="$ACTIVE_DIR/$LOG_FILE"
